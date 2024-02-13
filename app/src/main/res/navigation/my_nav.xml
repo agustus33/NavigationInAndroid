@@ -20,7 +20,19 @@
         android:label="fragment_second"
         tools:layout="@layout/fragment_second" >
         <action
+            android:id="@+id/action_secondFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+        <action
             android:id="@+id/action_secondFragment_to_firstFragment"
             app:destination="@id/firstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.example.navigation.ui.theme.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_thirdFragment_to_secondFragment3"
+            app:destination="@id/secondFragment" />
     </fragment>
 </navigation>
